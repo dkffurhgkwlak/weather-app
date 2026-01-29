@@ -1,0 +1,15 @@
+# CodeRabbit 설정 예시
+language: "ko-KR" # 리뷰 언어를 한국어로 설정
+
+reviews:
+  profile: "chill" # chill, standard, assertive 중 선택 (assertive가 더 깊은 분석)
+  request_review_mode: "auto" # 자동 리뷰 설정
+
+  # 컨텍스트 및 분석 범위 관련 (핵심!)
+  high_level_summary: true # 프로젝트 전체 맥락 요약 사용
+  path_filters:
+    - "!dist/**"
+    - "!**/node_modules/**"
+
+chat:
+  auto_reply: true # AI와 대화하며 컨텍스트 추가 확장 가능
