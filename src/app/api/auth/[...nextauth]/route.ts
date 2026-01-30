@@ -14,9 +14,9 @@ export const authOptions = {
   callbacks: {
     async redirect({ url, baseUrl }: { url: string; baseUrl: string }) {
       // 로그인 후 main page로 리다이렉트
-      if (url.startsWith("/")) return `${baseUrl}${url}`;
-      else if (new URL(url).origin === baseUrl) return url;
-      return baseUrl;
+      // if (url.startsWith("/")) return `${baseUrl}${url}`;
+      // else if (new URL(url).origin === baseUrl) return url;
+      // return baseUrl;
     },
   },
 };
